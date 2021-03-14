@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <!--The Wave animation tag-->
+    <me.itangqi.waveloadingview.WaveLoadingView
+        android:id="@+id/waveLoadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        app:wlv_progressValue="20"
+        app:wlv_shapeType="rectangle"
+        app:wlv_triangle_direction="north"
+        app:wlv_waveAmplitude="20"
+        app:wlv_waveColor="@android:color/holo_blue_dark"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/batteryPercentageTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"
+            tools:text="Demo" />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/seekBarLabel"
+            android:textSize="16sp" />
+        <SeekBar
+            android:id="@+id/batterySeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:thumbTint="@color/colorPrimaryDark"
+            android:progressTint="@color/colorPrimaryDark"
+            android:layout_marginTop="10dp"
+            android:max="100"/>
+        <TextView
+            android:id="@+id/seekBarValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"
+            tools:text="100%"/>
+        <Button
+            android:id="@+id/alarmButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/white"
+            android:padding="5dp"
+            android:text="@string/setAlert" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Battery HealthKit</string>
+    <string name="setAlert">Set Alert</string>
+    <string name="removeAlert">Remove Alert</string>
+    <string name="seekBarLabel">Select when to sound the alarm:</string>
+    <string name="battery_full_notification_name">Default Notifications</string>
+    <string name="battery_full_notification_description">Keep this notification ON at all times</string>
+    <string name="alarm_set_notification_name">This is used to notify when the alarm is set</string>
+    <string name="sharedPreferencesFile">hz.chargealert.sharedPreferencesFile</string>
+    <string name="buttonSetting">buttonSetting</string>
+    <string name="batteryValue">batteryValue</string>
+</resources>
