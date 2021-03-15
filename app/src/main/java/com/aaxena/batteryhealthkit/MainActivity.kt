@@ -32,10 +32,6 @@ class MainActivity : AppCompatActivity() {
             val status: Int = intent.getIntExtra(BatteryManager.EXTRA_STATUS, -1)
             val isCharging: Boolean = status == BatteryManager.BATTERY_STATUS_CHARGING
                     || status == BatteryManager.BATTERY_STATUS_FULL
-//
-//            val chargePlug: Int = intent.getIntExtra(BatteryManager.EXTRA_PLUGGED, -1)
-//            val usbCharge: Boolean = chargePlug == BatteryManager.BATTERY_PLUGGED_USB
-//            val acCharge: Boolean = chargePlug == BatteryManager.BATTERY_PLUGGED_AC
 
             val level: Int = intent.getIntExtra(BatteryManager.EXTRA_LEVEL, -1)
             val scale: Int = intent.getIntExtra(BatteryManager.EXTRA_SCALE, -1)
@@ -53,7 +49,6 @@ class MainActivity : AppCompatActivity() {
             }
             if (batteryPercentInt in 0..41) {
                 alarmButton.apply {
-                    setBackgroundColor(ContextCompat.getColor(context, R.color.colorPrimaryDark))
                     setTextColor(ContextCompat.getColor(context, R.color.white))
                 }
             } else {

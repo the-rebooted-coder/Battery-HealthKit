@@ -24,13 +24,15 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
         android:orientation="vertical">
+
         <TextView
             android:id="@+id/batteryPercentageTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="30sp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/productsansbold"
+            android:textSize="32sp"
             tools:text="Demo" />
 
         <TextView
@@ -38,33 +40,47 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:fontFamily="@font/productsans"
             android:text="@string/seekBarLabel"
-            android:textSize="16sp" />
+            android:textSize="18sp" />
+
         <SeekBar
             android:id="@+id/batterySeekBar"
+            style="@android:style/Widget.Material.SeekBar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:thumbTint="@color/colorPrimaryDark"
-            android:progressTint="@color/colorPrimaryDark"
             android:layout_marginTop="10dp"
-            android:max="100"/>
+            android:elevation="25dp"
+            android:max="95"
+            android:progressTint="@color/colorAccent"
+            android:scrollbarSize="8dp"
+            android:scrollbarStyle="insideInset"
+            android:thumbTint="@color/colorPrimaryDark" />
+
         <TextView
             android:id="@+id/seekBarValueTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:textSize="20sp"
             android:layout_marginBottom="10dp"
-            tools:text="100%"/>
+            android:fontFamily="@font/productsans"
+            android:textSize="20sp"
+            tools:text="100%" />
+
         <Button
             android:id="@+id/alarmButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:background="@color/colorPrimaryDark"
-            android:textColor="@color/white"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/button_default"
+            android:elevation="30dp"
+            android:fontFamily="@font/productsansbold"
             android:padding="5dp"
-            android:text="@string/setAlert" />
+            android:text="@string/setAlert"
+            android:textColor="@color/white"
+            android:textColorHighlight="@color/white"
+            android:textColorLink="@color/white" />
     </LinearLayout>
 </RelativeLayout>
