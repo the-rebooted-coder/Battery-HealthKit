@@ -6,7 +6,7 @@ import android.app.Service
 import android.content.Intent
 import android.content.IntentFilter
 import android.os.BatteryManager
-import android.support.v4.app.NotificationCompat
+import androidx.core.app.NotificationCompat
 import timber.log.Timber
 
 class AlarmService: IntentService("com.aaxena.batteryhealthkit.AlarmService") {

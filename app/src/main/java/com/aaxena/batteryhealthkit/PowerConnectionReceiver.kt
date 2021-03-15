@@ -7,8 +7,8 @@ import android.content.Intent
 import android.media.RingtoneManager
 import android.net.Uri
 import android.os.BatteryManager
-import android.support.v4.app.NotificationCompat
-import android.support.v4.app.NotificationManagerCompat
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 
 class PowerConnectionReceiver: BroadcastReceiver() {
     override fun onReceive(context: Context, intent: Intent) {

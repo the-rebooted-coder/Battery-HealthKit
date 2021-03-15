@@ -7,9 +7,9 @@ import android.content.IntentFilter
 import android.graphics.PorterDuff
 import android.os.BatteryManager
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v4.content.ContextCompat
+import androidx.core.content.ContextCompat
 import android.widget.Button
 import android.widget.SeekBar
 import android.widget.TextView
