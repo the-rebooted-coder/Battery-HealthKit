@@ -1,3 +1,2 @@
 # Battery HealthKit
-## Project to Save Your Device's Battery
- 
+### Project to Save Your Device's Battery
